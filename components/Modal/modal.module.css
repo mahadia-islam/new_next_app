@@ -1,247 +1,53 @@
-.modal {
+.modal{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.466);
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: fit-content;
-  display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.479);
   z-index: 9999;
 }
 
-.modal form {
-  max-width: 750px;
+.modal form{
+  max-width: 400px;
   width: 100%;
   background: #fff;
+  padding: 20px;
   border-radius: 10px;
-  padding: 40px;
-  position: relative;
 }
 
-.modal form button {
-  margin: auto;
-  border: 1px solid #1cc88a;
-  background: #1cc88a;
-  color: #fff;
+.modal form input{
+  border: none;
+  border-bottom: 1px solid #e7e7e7;
+  width: 100%;
+  margin: 10px 0 20px 0;
+  padding-bottom: 5px;
+}
+
+.modal form .btn__div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal  form .btn__div button{
   padding: 10px 25px;
+  font-size: 14px;
   border-radius: 10px;
-}
-
-.modal form .mini__form {
-  width: 100%;
-  display: flex;
-}
-
-.modal form h4 {
-  font-size: 20px;
-  padding-bottom: 20px;
-}
-
-.modal form .input__box {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: 15px 0;
-}
-
-.modal form .input__box input {
-  width: 48%;
   border: none;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
 }
 
-.modal form .input__box input::placeholder {
-  font-size: 14px;
-}
-
-.modal form .input__box__two {
-  width: 50%;
-}
-
-.modal form .input__box__two .input__box__mini {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: 15px 0;
-}
-
-.modal form .input__box__two:first-child {
-  padding-right: 20px;
-}
-
-.modal form .input__box__two .input__box__mini input {
-  width: 48%;
-  border: none;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-}
-
-.modal form .input__box__two .input__box__mini input {
-  font-size: 14px;
-}
-
-.modal form .close_btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  padding: 0;
-}
-
-.modal
-  form
-  .input__box__two
-  .input__box__mini
-  input[type="file"]::-webkit-file-upload-button {
-  background: #1cc88a;
-  border: none;
-  color: #fff;
-}
-
-.modal
-  form
-  .input__box__two
-  .input__box__mini
-  input[type="file"]::-webkit-inner-spin-button {
-  display: none;
-}
-
-.modal form .input__box__two .label_div {
-  width: 100%;
-  margin-top: 20px;
-}
-
-.modal form .input__box__two .label_div label {
-  color: #000;
-  font-size: 14px;
-}
-
-.modal form .selected__item {
-  width: 100%;
-  display: flex;
-  margin: 15px 0 15px 0;
-}
-
-.modal form .selected__item .selected__item__one {
-  width: 50%;
-}
-
-.modal form .selected__item .selected__item__one h4 {
-  font-size: 15px;
-}
-
-.modal form .selected__item .selected__item__one .selected__item__box {
-  display: flex;
-  margin: 25px 0;
-}
-
-.modal form .selected__item .selected__item__one .selected__item__box span {
-  font-size: 14px;
-}
-
-.modal form .selected__item .selected__item__two {
-  width: 50%;
-}
-
-.styled_checkbox {
-  position: absolute;
-  opacity: 0;
-}
-
-.styled_checkbox + label {
-  position: relative;
-  cursor: pointer;
-  padding: 0;
-}
-
-.styled_checkbox + label:before {
-  content: "";
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: text-top;
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  border: 1px solid #1cc88a;
-  border-radius: 5px;
-}
-
-.styled_checkbox:checked + label:after {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 9px;
-  background: white;
-  width: 2px;
-  height: 2px;
-  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
-    4px -6px 0 white, 4px -8px 0 white;
-  transform: rotate(45deg);
-}
-
-.styled_checkbox:hover + label:before {
-  background: #1cc88a;
-}
-
-.styled_checkbox:disabled + label:before {
-  box-shadow: none;
-  background: #ddd;
-}
-
-/* .styled_checkbox:focus + label:before {
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
-} */
-
-.styled_checkbox:checked + label:before {
-  background: #1cc88a;
-}
-
-.styled_checkbox + label {
-  font-size: 15px;
-}
-
-.styled_checkbox:disabled + label {
-  color: #b8b8b8;
-  cursor: auto;
-}
-
-/* modal selected item two */
-
-.modal form .selected__item .selected__item__two > div {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.modal form .selected__item .selected__item__two select {
-  background: transparent;
+.modal  form .btn__div .btn_one{
   border: 1px solid #ddd;
-  padding: 5px 15px;
-  border-radius: 20px;
-  font-size: 14px;
-  outline: none;
-  color: #555;
+  background: #fff;
+  width: 40%;
 }
 
-.modal form .selected__item .selected__item__two {
-  width: 50%;
-}
-
-.modal form .selected__item .selected__item__two h4 {
-  font-size: 15px;
-}
-
-.modal form .selected__item .selected__item__two .selected__item__box {
-  display: flex;
-  margin: 15px 0;
-}
-
-.modal form .selected__item .selected__item__two .selected__item__box span {
-  font-size: 14px;
+.modal  form .btn__div .btn_two{
+  border: 1px solid #f56b2b;
+  background: #f56b2b;
+  color: #fff;
+  width: 55%;
 }
