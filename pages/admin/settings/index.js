@@ -6,6 +6,8 @@ import CreateOutlinedIcon from "@mui/icons-material/CreateOutlined";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
+import Modal from '../../../components/Modal/Modal';
+import { useState } from "react";
 
 const Android12Switch = styled(Switch)(({ theme }) => ({
   padding: 8,
@@ -41,9 +43,15 @@ const Android12Switch = styled(Switch)(({ theme }) => ({
     margin: 2,
   },
 }));
+
 const Settings = () => {
+
+  const [openModal,setModal] = useState(false);
+
   return (
-    <DashBoardLayout appbar_title={"Settings"}>
+    <>
+      {openModal && <Modal isOpen={openModal} closeModal={ setModal }/>}
+      <DashBoardLayout appbar_title={"Settings"}>
       <section className={classes.settings}>
         <Container>
           <Row>
@@ -52,7 +60,7 @@ const Settings = () => {
               <div className={classes.setting_inner_blocks}>
                 <div className={classes.setting_inner_block}>
                   <p>Seller Fee is <span>15%</span></p>
-                  <button>Change</button>
+                  <button onClick={() => setModal(!openModal)}>Change</button>
                 </div>
                 <div className={`${classes.setting_inner_block}`}>
                   <p>Deposit Fee is <span>5%</span></p>
@@ -74,7 +82,7 @@ const Settings = () => {
                 <div className={classes.setting_inner_block}>
                   <p>Pay with Flutterwave</p>
                   <div className={classes.utils}>
-                    <label className={classes.toggle} htmlFfor="uniqueID">
+                    <label className={classes.toggle} htmlFor="uniqueID">
                       <input type="checkbox" className={classes.toggle__input} id="uniqueID"/>
                       <span className={classes.toggle_track}>
                         <span className={classes.toggle_indicator}>
@@ -95,7 +103,7 @@ const Settings = () => {
                 <div className={`${classes.setting_inner_block}`}>
                   <p>Pay with Bank Transfar</p>
                   <div className={classes.utils}>
-                    <label className={classes.toggle} htmlFfor="uniqueID">
+                    <label className={classes.toggle} htmlFor="uniqueID">
                       <input type="checkbox" className={classes.toggle__input} id="uniqueID"/>
                       <span className={classes.toggle_track}>
                         <span className={classes.toggle_indicator}>
@@ -123,7 +131,7 @@ const Settings = () => {
                 <div className={classes.setting_inner_block}>
                   <p>Milestone</p>
                   <div className={classes.utils}>
-                    <label className={classes.toggle} htmlFfor="uniqueID">
+                    <label className={classes.toggle} htmlFor="uniqueID">
                       <input type="checkbox" className={classes.toggle__input} id="uniqueID"/>
                       <span className={classes.toggle_track}>
                         <span className={classes.toggle_indicator}>
@@ -165,7 +173,7 @@ const Settings = () => {
                 <div className={classes.setting_inner_block}>
                   <p>All Fixes To Require Approval</p>
                   <div className={classes.utils}>
-                    <label className={classes.toggle} htmlFfor="uniqueID">
+                    <label className={classes.toggle} htmlFor="uniqueID">
                       <input type="checkbox" className={classes.toggle__input} id="uniqueID"/>
                       <span className={classes.toggle_track}>
                         <span className={classes.toggle_indicator}>
@@ -186,7 +194,7 @@ const Settings = () => {
                 <div className={classes.setting_inner_block}>
                   <p>Extras</p>
                   <div className={classes.utils}>
-                    <label className={classes.toggle} htmlFfor="uniqueID">
+                    <label className={classes.toggle} htmlFor="uniqueID">
                       <input type="checkbox" className={classes.toggle__input} id="uniqueID"/>
                       <span className={classes.toggle_track}>
                         <span className={classes.toggle_indicator}>
@@ -209,7 +217,7 @@ const Settings = () => {
                 <div className={classes.setting_inner_block}>
                   <p>Registretion</p>
                   <div className={classes.utils}>
-                    <label className={classes.toggle} htmlFfor="uniqueID">
+                    <label className={classes.toggle} htmlFor="uniqueID">
                       <input type="checkbox" className={classes.toggle__input} id="uniqueID"/>
                       <span className={classes.toggle_track}>
                         <span className={classes.toggle_indicator}>
@@ -230,7 +238,7 @@ const Settings = () => {
                 <div className={classes.setting_inner_block}>
                   <p>Withdrawals</p>
                   <div className={classes.utils}>
-                    <label className={classes.toggle} htmlFfor="uniqueID">
+                    <label className={classes.toggle} htmlFor="uniqueID">
                       <input type="checkbox" className={classes.toggle__input} id="uniqueID"/>
                       <span className={classes.toggle_track}>
                         <span className={classes.toggle_indicator}>
@@ -257,7 +265,7 @@ const Settings = () => {
                 <div className={classes.setting_inner_block}>
                   <p>User to withdraw Deposites</p>
                   <div className={classes.utils}>
-                    <label className={classes.toggle} htmlFfor="uniqueID">
+                    <label className={classes.toggle} htmlFor="uniqueID">
                       <input type="checkbox" className={classes.toggle__input} id="uniqueID" disabled/>
                       <span className={classes.toggle_track}>
                         <span className={classes.toggle_indicator}>
@@ -290,7 +298,8 @@ const Settings = () => {
           </Row>
         </Container>
       </section>
-    </DashBoardLayout>
+      </DashBoardLayout>
+    </>
   );
 };
 
