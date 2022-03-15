@@ -1,0 +1,132 @@
+.user {
+  margin-top: 3rem;
+}
+
+.user_image {
+  height: 200;
+  width: 200;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.user_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+  background: #ffffff;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.fix_by {
+  padding: 1rem 0;
+  margin: 0 0.8rem;
+}
+
+.fix_by h3 {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--title-color);
+}
+
+.user_card h4 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.username {
+  color: #808080;
+  font-size: 14px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.user_card p {
+  text-align: center;
+  color: #808080;
+  font-size: 14px;
+}
+
+.bottom_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2.5px solid #f1f1f1;
+  border-radius: 10px;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.small_text {
+  margin: 0 0.8rem;
+}
+
+.small_text span {
+  font-size: 10px;
+  font-weight: 700;
+  color: #808080;
+  margin-left: 0.5rem;
+}
+
+.star_icon {
+  color: var(--primary-color-light);
+}
+
+.phone,
+.date {
+  color: #808080;
+}
+
+.contact_me {
+  background: #1cc88a;
+  border: 2.5px solid #1cc88a;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 0.5rem 4rem;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.create_icon {
+  font-size: 0.8rem;
+}
+
+.bottom_divider {
+  background-color: #f2f2f2;
+  margin-top: 3rem;
+}
+
+.active_status {
+  border: 1px solid #f27415;
+  border-radius: 8px;
+  padding: 0.4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.active_status span {
+  margin-left: 0.3rem;
+  font-size: 12px;
+  color: #f27415;
+}
+
+.dot {
+  background: #f27415;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}

@@ -1,0 +1,152 @@
+.finance {
+  margin-top: 2rem;
+  min-height: 84vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.earning_row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+.card {
+  background: #fbfffd;
+  min-width: 8rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0.9rem;
+}
+
+.pending_card {
+  background: #fffbfd;
+}
+
+.refund_card {
+  background: #343434;
+}
+
+.deposit_card {
+  background: #e8edef;
+}
+
+.refund_card .tag {
+  color: white;
+}
+
+.refund_card .amount {
+  color: white;
+}
+
+.tag {
+  font-size: 10px;
+  color: #808080;
+  margin-bottom: 0.5rem;
+}
+
+.amount {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.withdraw_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.user_info h6 {
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #343434;
+}
+
+.user_info p {
+  font-size: 10px;
+  color: #808080;
+  margin-bottom: 0;
+}
+
+.widthdraw_info h6 {
+  margin-bottom: 0;
+  color: #343434;
+}
+
+.widthdraw_info p {
+  font-size: 10px;
+  color: #808080;
+  margin-bottom: 0;
+}
+
+.delete_icon {
+  color: #f73c41;
+  font-size: 2rem;
+}
+
+.withdraw_title {
+  color: #343434;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.button_div {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.request {
+  background: #e3732a;
+  border-radius: 8px;
+  color: white;
+  padding: 0.6rem;
+  border: none;
+  font-size: 14px;
+}
+
+.history {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: none;
+  padding: 0.6rem;
+  color: #808080;
+  font-size: 14px;
+}
+
+.img_div {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 992px) {
+  .title {
+    margin-left: 1rem;
+  }
+
+  .button_div {
+    margin-bottom: 2rem;
+  }
+}

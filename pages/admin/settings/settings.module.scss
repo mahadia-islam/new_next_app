@@ -1,0 +1,153 @@
+.settings {
+  padding-bottom: 60px;
+}
+
+.setting_title {
+  color: #222;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 50px 0 20px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.setting_block {
+  width: 100%;
+  padding: 0;
+
+  .setting_inner_blocks {
+    width: 100%;
+    display: flex;
+    .setting_inner_block {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #f1f1f1;
+      padding: 10px 0;
+      align-items: center;
+      height: 60px;
+      padding-right: 50px;
+      p {
+        color: #555;
+        margin: 0;
+        span {
+          color: #111;
+          font-weight: 600;
+        }
+      }
+      button {
+        font-size: 14px;
+        width: 120px;
+        height: 32px;
+        border: none;
+        background: #f56b2b;
+        color: #fff;
+        border-radius: 6px;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .utils {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        .toggle {
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          border-radius: 100px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          font-weight: 700;
+          margin-bottom: 16px;
+        }
+
+        .toggle:last-of-type {
+          margin: 0;
+        }
+
+        .toggle__input {
+          clip: rect(0 0 0 0);
+          -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+          height: 1px;
+          overflow: hidden;
+          position: absolute;
+          white-space: nowrap;
+          width: 1px;
+        }
+
+        .toggle__input:not([disabled]):active + .toggle_track,
+        .toggle__input:not([disabled]):focus + .toggle_track {
+          border: 1px solid transparent;
+        }
+
+        .toggle__input:disabled + .toggle_track {
+          cursor: not-allowed;
+          opacity: 0.7;
+        }
+
+        .toggle_track {
+          background: rgb(47, 255, 151);
+          border: 1px solid rgb(47, 255, 151);
+          border-radius: 100px;
+          cursor: pointer;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          height: 25px;
+          margin-right: 12px;
+          position: relative;
+          width: 50px;
+        }
+
+        .toggle_indicator {
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          background: white;
+          border-radius: 24px;
+          bottom: 2px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          height: 20px;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          left: 2px;
+          outline: solid 2px transparent;
+          position: absolute;
+          -webkit-transition: all 1s;
+          transition: all 1s;
+          width: 20px;
+        }
+
+        .checkMark {
+          fill: #fff;
+          height: 18px;
+          width: 18px;
+          opacity: 0;
+          -webkit-transition: opacity 1s ease-in-out;
+          transition: opacity 1s ease-in-out;
+        }
+
+        .toggle__input:checked + .toggle_track .toggle_indicator {
+          background: white;
+          -webkit-transform: translateX(30px);
+          transform: translateX(26px);
+        }
+
+        .toggle__input:checked + .toggle_track .toggle_indicator .checkMark {
+          opacity: 1;
+          -webkit-transition: opacity 1s ease-in-out;
+          transition: opacity 1s ease-in-out;
+        }
+        input {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

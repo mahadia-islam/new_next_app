@@ -1,0 +1,186 @@
+.job_card_grid {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 2rem;
+
+  .job_card {
+    background: #ffffff;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 1.5rem;
+    // cursor: pointer;
+
+    .job_card_top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 1rem;
+
+      .top_info {
+        p {
+          margin-bottom: 0;
+          max-width: 11rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        span {
+          &:first-child {
+            color: #797979;
+            font-size: 14px;
+          }
+          &:last-child {
+            color: #e46713;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .job_card_img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 90px;
+        height: 90px;
+        border-radius: 1rem;
+        overflow: hidden;
+      }
+    }
+
+    .card_details {
+      p {
+        font-size: 12px;
+        color: rgba(12, 12, 12, 0.7);
+      }
+    }
+
+    .card_bottom_grid {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+
+      .card_button_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+
+        .button_div {
+          display: flex;
+          flex-direction: column;
+          button {
+            background: #f9f9f9;
+            border-radius: 49px;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            margin: 0.2rem 0;
+            font-size: 12px;
+          }
+
+          .approve {
+            color: #1cc88a;
+          }
+
+          .delete {
+            color: #ff0000;
+          }
+        }
+      }
+
+      .offer_info {
+        button {
+          margin-bottom: 0;
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          border: none;
+          background-color: transparent;
+          span {
+            margin: 0 0.2rem;
+            white-space: nowrap;
+          }
+          .offer_info_icon {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.button_div_container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+
+  .button_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+
+    button {
+      border: none;
+      background: #f9f9f9;
+      border-radius: 46px;
+      padding: 0.5rem 1.5rem;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .active {
+      background-color: #e46713;
+      color: white;
+    }
+  }
+}
+
+.menu_item {
+  min-width: 10rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #f2f2f2;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.card_cover {
+  position: relative;
+
+  .bottom_card_btn {
+    position: absolute;
+    z-index: 1000;
+    right: 1.5rem;
+    bottom: 2.2rem;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    span {
+      margin: 0 0.2rem;
+      white-space: nowrap;
+    }
+    .offer_info_icon {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .button_div_container {
+    .button_div {
+      grid-gap: 0.5rem;
+      button {
+        font-size: 12px;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}

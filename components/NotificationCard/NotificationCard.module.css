@@ -1,0 +1,137 @@
+.drop_down_menu {
+  z-index: 1000000;
+  width: 25rem;
+  inset: 20px 0px auto auto !important;
+}
+
+.clip_path {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  content: "";
+  background-color: #f0f0f0;
+  z-index: 10000000;
+  top: -1rem;
+  right: -1px;
+  clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 50% 72%, 0 54%, 47% 35%);
+  -webkit-clip-path: polygon(
+    100% 0%,
+    100% 49%,
+    100% 100%,
+    50% 72%,
+    0 54%,
+    47% 35%
+  );
+}
+
+.menu_list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  background-color: #f0f0f0;
+}
+
+.notification_card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.menu_item {
+  color: var(--title-color) !important;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: var(--fontFamily);
+  padding: 0rem 1rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.menu_item:hover {
+  background-color: #f1f1f1;
+}
+
+.notification {
+  background: #625c5c !important;
+  color: white;
+  height: 2rem;
+  width: 2rem;
+}
+
+.notification:hover {
+  background-color: #625c5c;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0 1.5rem;
+}
+
+.mark {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 14px;
+  color: #5377b1;
+  z-index: 1000000000 !important;
+}
+.title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.notification_content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-gap: 0.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.bell_icon {
+  font-size: 1.15rem;
+  color: white;
+}
+
+.readed {
+  background-color: white;
+}
+
+.notifiacation_image {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #c4c4c4;
+}
+
+.text {
+  font-size: 12px;
+  text-align: justify;
+  line-height: 1rem;
+  color: #2f3848;
+  margin-bottom: 0;
+}
+
+.time {
+  font-size: 14px;
+  color: #a8a6a6;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 992px) {
+  .drop_down_menu {
+    z-index: 1000000;
+    width: 20rem;
+    inset: 50px 0px auto auto !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+  }
+}

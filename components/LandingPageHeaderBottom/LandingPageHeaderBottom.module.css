@@ -1,0 +1,75 @@
+.ladingPageHeaderBottom {
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+}
+.dropdown_div {
+  display: flex;
+  align-items: baseline;
+  padding: 0.5rem;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: #777;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dropdown .active > .link,
+.link:hover {
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown_menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.25rem);
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(233, 233, 233);
+  opacity: 0;
+  z-index: 1000000000000;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.last_child {
+  left: auto;
+  right: 0;
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.information_grid {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 0.5rem 2rem;
+}
+
+.dropdown_links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dropdown_heading h5 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}

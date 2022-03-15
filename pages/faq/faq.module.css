@@ -1,0 +1,164 @@
+.faq_top {
+  background-color: #2e4372;
+}
+
+.faq_middle {
+  margin: 6rem 0;
+}
+
+.faq_title_text {
+  padding: 3rem;
+}
+.faq_title_text h1 {
+  text-align: center;
+  font-weight: 800;
+  color: white;
+  font-size: 4rem;
+}
+
+.faq_title_text p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+}
+
+.header_faq {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.vertical_divider {
+  height: 2rem !important;
+  width: 0.1rem;
+  margin-right: 1rem;
+  background-color: white;
+}
+
+.home {
+  text-decoration: none;
+  color: var(--primary-color) !important;
+  margin: 0.5rem 0;
+  margin-right: 1.2rem;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button_group {
+  background: #d6e1ff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 44px;
+}
+
+.button_group button {
+  outline: none;
+  border: none;
+  transition: all 0.5s ease;
+  padding: 1rem 0;
+  height: 3rem;
+  background-color: transparent;
+  font-weight: 800;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.button_group button:hover {
+  color: #1976d2 !important;
+}
+
+.active_btn {
+  background-color: white !important;
+  border-radius: 50px 0px 0px 50px;
+}
+
+.accordian_card {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.accordian_item {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.expand_more {
+  color: var(--primary-color);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.details {
+  margin-left: 1.5rem;
+  text-align: justify;
+}
+
+.connect {
+  margin-top: 8rem;
+}
+
+.contact_mail,
+.social_media {
+  border: 1px solid #f1f1f1;
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+.contact_mail p {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+.mailto {
+  color: var(--primary-color) !important;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.social_media h6 {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.media_icon {
+  color: var(--primary-color);
+  margin: 0 0.3rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 992px) {
+  .contact_mail {
+    margin: 1rem 0;
+  }
+
+  .faq_title_text h1 {
+    font-size: 2rem;
+  }
+
+  .faq_title_text p {
+    font-size: 1rem;
+  }
+  .connect {
+    margin-top: 2rem;
+  }
+}

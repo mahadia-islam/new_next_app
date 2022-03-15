@@ -1,0 +1,86 @@
+.my_request {
+  margin: 2rem 0;
+}
+.title {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.card_content {
+  border: 1px solid #f1f1f1;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 2.5rem;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.card_content:hover {
+  cursor: pointer;
+}
+
+.card_content h5 {
+  color: #e16f26;
+}
+
+.card_content h4 {
+  color: #343434;
+  font-weight: 600;
+  font-size: 1.4rem;
+  width: 80%;
+}
+.user_img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.books_icon {
+  font-size: 1rem;
+  color: #625c5c;
+  margin-right: 0.5rem;
+}
+
+.books_icon + span {
+  color: #625c5c;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.approve {
+  color: #0c9229;
+  margin-bottom: 0;
+}
+
+.pending {
+  color: #f5a732;
+}
+
+.declined {
+  color: #ff0000;
+}
+
+.card_content_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .card_content {
+    padding: 1rem;
+  }
+  .card_content h4 {
+    font-size: 1rem;
+  }
+  .card_content h5 {
+    font-size: 1rem;
+  }
+  .card_content_top {
+    align-items: flex-start;
+  }
+}

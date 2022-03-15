@@ -1,0 +1,10 @@
+.fixCategory_section {
+  padding-bottom: 5rem;
+}
+
+.fix_cat_title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--title-color);
+  margin-bottom: 2rem;
+}

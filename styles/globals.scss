@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg-color-1: #f9f9f9;
+  --bg-color-2: #5377b1;
+  --secondary-text-color: #808080;
+  --text-color-gr: #1cc88a;
+  --title-color: #343434;
+  --primary-color: #e2732c;
+  --primary-color-light: #feb906;
+  --deep-text-color: #a5b4cb;
+  --fontFamily: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.blue h5::before {
+  border-bottom: 3px solid #4b6ac4 !important;
+}
+
+.orange h5::before {
+  border-bottom: 3px solid #ff8ea6 !important;
+}
+.sky h5::before {
+  border-bottom: 3px solid #8be1e4 !important;
+}
+
+.verticalTab_faq {
+  position: relative !important;
+  overflow: visible !important;
+  border: none !important;
+}
+
+.verticalTab_faq .MuiTabs-indicator {
+  background-color: white !important;
+  width: 7rem !important;
+  height: 5rem !important;
+  right: -2rem !important;
+  overflow: visible !important;
+  z-index: 1000000 !important;
+  -webkit-clip-path: polygon(
+    33% 39%,
+    35% 31%,
+    42% 23%,
+    79% 15%,
+    100% 0,
+    100% 15%,
+    100% 85%,
+    100% 100%,
+    76% 86%,
+    43% 78%,
+    34% 69%,
+    31% 55%
+  ) !important;
+  clip-path: polygon(
+    33% 39%,
+    35% 31%,
+    42% 23%,
+    79% 15%,
+    100% 0,
+    100% 15%,
+    100% 85%,
+    100% 100%,
+    76% 86%,
+    43% 78%,
+    34% 69%,
+    31% 55%
+  ) !important;
+}
+
+.activeBtn0 .MuiTabs-indicator {
+  top: -1rem !important;
+}
+
+.activeBtn1 .MuiTabs-indicator {
+  top: 2rem !important;
+}
+
+.activeBtn2 .MuiTabs-indicator {
+  top: 5rem !important;
+}
+
+.MuiTabs-flexContainer {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.MuiTabs-scroller {
+  overflow: visible !important;
+}
+
+.forgot_modal .modal-content {
+  border-radius: 30px !important;
+  padding: 0 !important;
+}
+
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev {
+  position: absolute;
+  z-index: 1000000000 !important;
+  background: #ffffff !important;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  width: 2rem;
+  height: 2rem;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.slick-arrow.slick-next {
+  right: 0;
+}
+
+.slick-arrow.slick-prev {
+  left: 0;
+}
+
+.slick-prev:before {
+  content: "" !important;
+  background-image: url("../public/icons/prev.svg") !important;
+  font-size: 1rem;
+  z-index: 100000;
+  height: 1rem;
+  width: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.slick-next:before {
+  content: "" !important;
+  background-image: url("../public/icons/next.svg") !important;
+  font-size: 1rem;
+  z-index: 100000;
+  height: 1rem;
+  width: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+p#mui-3,
+p.MuiTablePagination-displayedRows.css-levciy-MuiTablePagination-displayedRows {
+  margin-bottom: 0;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+  width: 15% !important;
+}
+
+.slick-list {
+  padding: 0 20% 0 0 !important;
+}

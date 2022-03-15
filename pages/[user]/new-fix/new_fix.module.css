@@ -1,0 +1,149 @@
+.edit_profile {
+  margin: 3rem 0;
+}
+
+.edit_profile_card {
+  border: 2px solid #f1f1f1;
+  border-radius: 58px;
+  padding: 2rem;
+}
+.input_field {
+  border-radius: 0.5rem;
+  box-shadow: none !important;
+  outline: none;
+}
+.form_row {
+  display: flex;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.dropImg {
+  margin: 0 0.2rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cacaca;
+}
+.dropImg {
+  overflow: hidden;
+}
+
+.dropImg img {
+  width: 100%;
+  overflow: hidden;
+}
+.dropzone {
+  margin: 0 0.2rem;
+  border-radius: 0.5rem;
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cacaca;
+}
+.dropzone p {
+  text-align: center;
+  font-size: 1.3rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 0;
+  color: #c5c5c5;
+}
+
+.dropzone:first-child {
+  background-color: #0000001a;
+}
+
+.video_dropzone {
+  margin: 0 0.2rem;
+  border-radius: 0.5rem;
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cacaca;
+}
+.video_dropzone p {
+  text-align: center;
+  font-size: 1.3rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 0;
+  color: #c5c5c5;
+}
+
+.video_dropzone:first-child {
+  background-color: #0000001a;
+}
+
+.create_fix {
+  border: 2px solid #e16f26;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 3.5rem;
+  width: 15rem;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  background-color: #e16f26;
+  transition: all 0.5s ease;
+}
+.create_fix:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.inputLabel {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+.small_label {
+  color: #808080;
+  margin-bottom: 0;
+}
+
+.image_div {
+  display: flex;
+  align-items: center;
+}
+
+.extra_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+@media (max-width: 992px) {
+  .form_row {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+
+  .image_div {
+    flex-direction: column;
+  }
+
+  .dropImg {
+    margin: 1rem 0;
+  }
+
+  .dropzone {
+    margin-bottom: 1rem;
+  }
+
+  .inputLabel {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  .edit_profile_card {
+    padding: 0 1rem;
+    border-radius: 1rem;
+  }
+}

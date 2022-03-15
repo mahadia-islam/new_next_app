@@ -1,0 +1,175 @@
+.pay_now {
+  border-radius: 8px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  margin: 0.5rem 0;
+  padding: 0.6rem 0;
+  font-size: 14px;
+  background: #1cc88a;
+}
+
+.close_btn {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.close_icon {
+  color: #808080;
+}
+
+.modal_title {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 1rem;
+}
+
+.modal_body {
+  padding: 2rem;
+}
+
+.active_icon_circle {
+  height: 1rem;
+  width: 1rem;
+  border: 3px solid #f27415;
+  border-radius: 50%;
+}
+.icon_circle {
+  height: 1rem;
+  width: 1rem;
+  border: 3px solid #eaeaf0;
+  border-radius: 50%;
+}
+
+.step_label {
+  color: #f27415;
+}
+
+.completed_check {
+  color: #1cc88a;
+}
+
+.advice {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.advice p {
+  margin-bottom: 0;
+  text-align: center;
+  width: 50%;
+  font-size: 14px;
+  color: #343434;
+}
+
+.summary_key_value_pair {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #c4c4c4;
+  margin: 1rem 0;
+}
+
+.summary_key_value_pair p {
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  color: #33383f;
+}
+
+.summary_key_value_pair p:last-child {
+  font-weight: 700;
+}
+
+.continue_btn_div {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.continue_btn {
+  background: #1cc88a;
+  border: 3px solid #1cc88a;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem 3rem;
+}
+
+.view_btn {
+  border: 3px solid #f1f1f1;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 0.5rem 3rem;
+  font-size: 14px;
+  background-color: white;
+}
+
+.input_div {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_div input {
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+  outline: none;
+  margin: 1rem 0;
+  padding-bottom: 0.5rem;
+  font-size: 14px;
+}
+
+.input_div input:last-child {
+  padding: 0;
+  border: none;
+  position: absolute;
+  display: none;
+}
+
+.input_div label {
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.input_div label span {
+  font-size: 12px;
+  color: #808080;
+}
+
+.file_input_btn {
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 6px 12px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thankyou_icon {
+  color: #1cc88a;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.thankyou h5 {
+  font-weight: 700;
+  text-align: center;
+  color: #1cc88a;
+  margin-bottom: 2rem;
+}
+
+.thankyou p {
+  text-align: center;
+  font-size: 14px;
+  width: 80%;
+}

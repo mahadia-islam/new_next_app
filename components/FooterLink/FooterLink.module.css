@@ -1,0 +1,27 @@
+.title {
+  margin-bottom: 1rem;
+}
+
+.title h3 {
+  color: #5c5959;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  text-decoration: none;
+  color: #625c5c !important;
+  margin: 0.3rem 0;
+  font-size: 14px;
+}
+
+@media (max-width: 576px) {
+  .footer_link_col {
+    padding: 1rem;
+  }
+}

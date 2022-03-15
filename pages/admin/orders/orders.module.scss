@@ -1,0 +1,105 @@
+.job_card_grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+
+  .job_card {
+    background: #ffffff;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 1.5rem;
+
+    .card_img {
+      width: 146px;
+      height: 120px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-bottom: 1rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #e46713;
+      text-align: center;
+
+      & + p {
+        font-size: 11px;
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 500;
+      }
+    }
+    .card_bottm {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        color: #2b60c8;
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+
+      h6 {
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.button_div_container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+
+  .button_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+
+    button {
+      border: none;
+      background: #f9f9f9;
+      border-radius: 46px;
+      padding: 0.5rem 1.5rem;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .active {
+      background-color: #e46713;
+      color: white;
+    }
+  }
+}
+
+.menu_item {
+  min-width: 10rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #f2f2f2;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 992px) {
+  .button_div_container {
+    .button_div {
+      grid-gap: 0.5rem;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      button {
+        font-size: 12px;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+.section_headerMain {
+  background-color: var(--bg-color-1);
+}
+
+.left_header_main {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.find_service h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #343434;
+  margin-bottom: 2rem;
+}
+
+.find_service h1 span {
+  color: var(--primary-color);
+}
+
+.search_input {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: white;
+  border-radius: 40px;
+  padding: 0 1rem;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.searchIcon {
+  color: rgba(118, 108, 108, 0.5);
+}
+
+.search_input input {
+  background-color: transparent;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  caret-color: var(--primary-color);
+  font-size: 16px !important;
+  padding: 0.8rem 0.8rem;
+  width: 60%;
+}
+
+.search_input input::placeholder {
+  color: #bab5b5;
+}
+
+.search_input button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  border-radius: 30px;
+  padding: 0.6rem 2rem;
+  height: 100%;
+  color: #fff;
+  background-color: #e2732c;
+  border: 1px solid #e2732c;
+}
+
+.popular {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--secondary-text-color);
+  font-size: 14px;
+}
+.popular_btn {
+  border: 1px solid #343434;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: transparent;
+  margin: 0.3rem;
+  padding: 0 0.8rem;
+  font-size: 14px;
+}
+
+.login_register {
+  margin-top: 2rem;
+}
+
+.login {
+  border: 1px solid var(--text-color-gr);
+  outline: none;
+  background-color: var(--text-color-gr);
+  color: white !important;
+  font-size: 14px;
+  border-radius: 40px;
+  padding: 0.4rem 1.5rem;
+  margin-right: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.login:hover {
+  background-color: transparent;
+  color: #343434 !important;
+}
+
+.register {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 14px;
+  border-radius: 40px;
+  padding: 0.4rem 1.5rem;
+  text-decoration: none;
+  color: black !important;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.register:hover {
+  background-color: var(--text-color-gr);
+  color: white !important;
+  border: 1px solid var(--text-color-gr);
+}
+
+@media (min-width: 576px) {
+  .header_main_container {
+    background: url("../../public/images/model.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  .find_service h1 {
+    font-size: 40px;
+  }
+  .left_header_main {
+    /* padding-top: 10rem; */
+    padding-bottom: 5rem;
+  }
+
+  .search_input input {
+    width: 80%;
+  }
+  .search_input button {
+    right: 0;
+  }
+  .popular_btn {
+    margin: 0.5rem;
+  }
+}

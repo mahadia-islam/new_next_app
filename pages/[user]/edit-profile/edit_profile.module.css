@@ -1,0 +1,57 @@
+.card_container {
+  margin: 4rem 0;
+  padding: 4rem;
+  border: 3px solid #f1f1f1;
+  border-radius: 58px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--title-color);
+  margin-bottom: 2rem;
+}
+
+.input_label {
+  font-size: 14px;
+  color: var(--secondary-text-color);
+  margin-bottom: 0.5rem;
+}
+
+.input_field {
+  outline: none;
+  box-shadow: none !important;
+  border: 2px solid #f1f1f1;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.input_field option {
+  text-align: center;
+}
+
+.create_fix {
+  border: 2px solid #e16f26;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 3.5rem;
+  width: 15rem;
+  margin-top: 3rem;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  background-color: #e16f26;
+  transition: all 0.5s ease;
+}
+
+.create_fix:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.input_section_title {
+  color: #4b4747;
+  font-weight: 600;
+  margin: 3rem 0;
+}

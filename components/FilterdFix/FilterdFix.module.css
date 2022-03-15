@@ -1,0 +1,206 @@
+.pagination_div {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.searchResult {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.filter {
+  border: 2px solid #363333;
+  border-radius: 5px;
+  color: #363333;
+  text-transform: capitalize;
+}
+
+.filter:hover {
+  border: 2px solid #363333;
+  border-radius: 5px;
+  color: #363333;
+}
+
+.postJobReq {
+  box-shadow: 0px 0.5px 1px rgb(0 0 0 / 25%);
+  padding: 45px 20px 20px 20px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  border: 1px solid #f1f1f1;
+}
+
+.postJobReq button {
+  font-size: 10px;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 7px 13px;
+}
+
+.postJobReq p {
+  font-size: 12px;
+  margin-bottom: 60px;
+}
+
+.onGoingSales {
+  display: flex;
+  border-radius: 10px;
+  background-color: hsl(299deg 11% 12%);
+  margin-top: 9px;
+}
+
+.boxCard_st {
+  width: 100%;
+
+  padding: 30px;
+}
+.boxCard_st div {
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  height: 135px;
+}
+.boxCard_st svg {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.boxCard_st p {
+  font-size: 12px;
+  margin: 25px 10px 0px 20px;
+}
+.boxCard_st span {
+  font-size: 14px;
+  margin: 25px 10px 0px 20px;
+}
+
+.btnGreen {
+  background-color: #1cc88a;
+}
+.btnOrange {
+  background-color: #fc8b06;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .postJobReq button {
+    font-size: 10px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 4px 8px;
+  }
+  .postJobReq p {
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+
+  .postJobReq {
+    box-shadow: 0px 0.5px 1px rgb(0 0 0 / 25%);
+    padding: 26px 15px 15px 15px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: 1px solid #f1f1f1;
+    height: 162px;
+  }
+
+  .onGoingSales {
+    display: flex;
+    border-radius: 5px;
+    margin-top: 9px;
+    background-color: hsl(299deg 11% 12%);
+    padding: 22px;
+  }
+
+  .boxCard_st {
+    width: 100%;
+    background-color: hsl(299deg 11% 12%);
+    padding: 0 7px;
+  }
+  .boxCard_st span {
+    font-size: 12px;
+    margin: 0 10px 0px 11px;
+  }
+  .boxCard_st p {
+    font-size: 10px;
+    margin: 15px 10px 0px 10px;
+  }
+  .boxCard_st svg {
+    margin-top: 12px;
+    margin-left: 15px;
+  }
+  .boxCard_st div {
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 3px;
+    height: 105px;
+  }
+}
+
+.dialog_body {
+  min-width: 30rem;
+}
+
+.filter_card_body {
+  padding: 1rem 2rem;
+}
+
+.close_icon_button {
+  position: absolute;
+  right: 1rem;
+  top: 1.8rem;
+}
+
+.close_icon {
+  font-size: 2rem;
+}
+
+.filter_card_body h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.maximum {
+  margin-left: 1rem;
+}
+
+.filter_btn {
+  background: #1cc88a;
+  border-radius: 20px;
+  font-size: 14px;
+  color: white;
+  padding: 0.6rem 3rem;
+  border: none;
+  text-transform: capitalize;
+  margin: 2rem;
+}
+
+.checkbox label {
+  font-size: 12px;
+}
+
+@media (max-width: 992px) {
+  .dialog_body {
+    min-width: 20rem;
+  }
+
+  .filter_card_body h3 {
+    font-size: 1.3rem;
+  }
+
+  .close_icon_button {
+    top: 1.3rem;
+  }
+
+  .searchResult h3 {
+    font-size: 1rem;
+  }
+  .filter_card_body {
+    padding: 0;
+  }
+}

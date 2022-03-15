@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACR,UAAU,EAAE,OAAO;EACnB,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,WAAW;EACpB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI;EACZ,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;CACjB",
+    "sources": [
+        "LoadMoreButton.module.scss"
+    ],
+    "names": [],
+    "file": "LoadMoreButton.module.css"
+}

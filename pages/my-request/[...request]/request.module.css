@@ -1,0 +1,122 @@
+.request {
+  margin: 2rem 0;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.card_content {
+  border: 1px solid #f1f1f1;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 2.5rem;
+  width: 100%;
+}
+.card_content h5 {
+  color: #e16f26;
+  margin-bottom: 0;
+}
+
+.card_content h4 {
+  color: #343434;
+  font-weight: 600;
+  font-size: 1.4rem;
+  width: 80%;
+}
+.user_img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer_details p {
+  color: #4e5561;
+  line-height: 23px;
+  font-size: 12px;
+}
+.books_icon {
+  font-size: 1rem;
+  color: #625c5c;
+  margin-right: 0.5rem;
+}
+.circle_icon {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  color: #2bcdcd;
+}
+
+.rating_icon {
+  font-size: 1.4rem;
+  color: #feb705;
+  margin-right: 0.2rem;
+}
+
+.rating_icon + span {
+  color: #feb705;
+  margin-right: 0.5rem;
+  font-size: 14px;
+}
+.books_icon + span,
+.circle_icon + span,
+.rating_icon + span + span {
+  color: #625c5c;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.no_offer {
+  border: 1px solid #f1f1f1;
+  box-sizing: border-box;
+  border-radius: 27px;
+  padding: 2rem 3rem;
+}
+
+.no_offer h5 {
+  margin-bottom: 0;
+  color: #625c5c;
+}
+
+.message {
+  background: transparent;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #625c5c;
+  padding: 0.8rem 4rem;
+  border: 1px solid #f1f1f1;
+  outline: none;
+  margin-top: 3rem;
+  margin-right: 2rem;
+}
+
+.send_offer {
+  background: #e16f26;
+  border-radius: 8px;
+  font-size: 14px;
+  color: white;
+  padding: 0.8rem 4rem;
+  border: 1px solid #e16f26;
+  outline: none;
+  margin-top: 3rem;
+}
+
+@media (max-width: 992px) {
+  .card_content {
+    padding: 1rem;
+  }
+
+  .card_content h4 {
+    font-size: 1rem;
+  }
+
+  .message,
+  .send_offer {
+    padding: 0.6rem 2rem;
+    margin-bottom: 2rem;
+  }
+}

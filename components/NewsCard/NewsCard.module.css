@@ -1,0 +1,26 @@
+.news_card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 1.7rem;
+  height: 100%;
+}
+
+img.newsImg {
+  object-fit: contain;
+  width: 100% !important;
+  height: unset !important;
+}
+
+.news_card h5 {
+  margin: 1rem 0;
+}
+
+.news_card p {
+  text-align: justify;
+  font-size: 15px;
+}
+
+.news_col {
+  margin-bottom: 1.7rem;
+}

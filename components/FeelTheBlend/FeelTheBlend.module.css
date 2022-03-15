@@ -1,0 +1,73 @@
+.feel_the_blend {
+  background: #f9fbfc;
+  padding: 3rem 0;
+}
+
+.details h1 {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.details p {
+  color: var(--title-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.card_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 2rem;
+}
+
+.grid_card {
+  background-color: white;
+  padding: 1.5rem;
+}
+.grid_card h6 {
+  color: var(--secondary-text-color);
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.grid_card p {
+  font-size: 0.9rem;
+  text-align: justify;
+  color: var(--title-color);
+}
+
+.number_div1,
+.number_div2,
+.number_div3 {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.number_div1 {
+  background: #e16f26;
+}
+
+.number_div2 {
+  background: #1cc88a;
+}
+.number_div3 {
+  background: #03014c;
+}
+
+.number_div1 h3,
+.number_div2 h3,
+.number_div3 h3 {
+  color: white;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,68 @@
+.create_offer {
+  background: #1cc88a;
+  color: white;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0.3rem 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.modal_body {
+  padding: 1.2rem;
+}
+
+.modal_title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.select_dropdown {
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 16px !important;
+  box-shadow: none !important;
+  outline: none;
+}
+
+.option_item {
+  font-size: 14px;
+  height: 5rem;
+  padding: 2rem 0;
+}
+
+.delivery_price {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin: 1rem 0;
+}
+
+.btn_grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  grid-gap: 1rem;
+}
+
+.cancel {
+  border: 3px solid #f1f1f1;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 0.4rem 0;
+  color: #625c5c;
+  text-transform: capitalize;
+}
+
+.submit {
+  background: #1cc88a;
+  border: 3px solid #1cc88a;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: white;
+  padding: 0.4rem 0;
+  text-transform: capitalize;
+}

@@ -1,0 +1,49 @@
+.withdraw_table_div {
+  margin-top: 4rem;
+  h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+}
+
+.table_title {
+  background: #f9f9f9;
+  border-radius: 1px;
+  text-transform: capitalize;
+  font-weight: 4600;
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+}
+
+.delete {
+  background: #e46713;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding: 0.5rem 2rem;
+}
+
+.star_icon {
+  color: #ffda1c;
+  font-size: 1rem;
+}
+.golden {
+  color: #ffda1c;
+  font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .button_div_container {
+    .button_div {
+      grid-gap: 0.5rem;
+      grid-template-columns: auto;
+      button {
+        font-size: 12px;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}

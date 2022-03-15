@@ -1,0 +1,61 @@
+.prohibitedWords {
+  margin-top: 2rem;
+}
+
+.add_btn {
+  background: #e46713;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 0.5rem 2rem;
+  font-size: 14px;
+}
+
+.page_body {
+  margin-top: 2rem;
+
+  h5 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}
+
+.trans_back {
+  background-color: white !important;
+}
+
+.bad_word_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  background: #f9f9f9;
+  border-radius: 1px;
+
+  p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  button {
+    background: #e46713;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 0.5rem 0;
+    width: 10rem;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .bad_word_card {
+    padding: 2rem 1rem;
+
+    button {
+      width: 6rem;
+      margin-left: 1rem;
+    }
+  }
+}

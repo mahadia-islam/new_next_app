@@ -1,0 +1,124 @@
+.bottom_footer {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.footer_logo {
+  display: flex;
+  align-items: flex-end;
+}
+.footer_logo a {
+  display: flex;
+}
+.footer_logo p {
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+  font-weight: 600;
+}
+
+.social_media {
+  display: flex;
+}
+.social_media_icon_div {
+  background-color: var(--secondary-text-color);
+  height: 21px;
+  width: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.social_media_icon_div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media_icon {
+  color: var(--secondary-text-color);
+  background-color: white;
+  font-size: 1.5rem;
+}
+
+.twitter {
+  color: white;
+  font-size: 1rem;
+}
+
+.footer_bottom_right {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-bottom: 1.2rem;
+}
+.download_title {
+  text-align: center;
+  margin-right: 1rem;
+  color: var(--secondary-text-color);
+  font-size: 1rem;
+}
+.made_with {
+  font-size: 10px;
+  color: var(--secondary-text-color);
+  margin-bottom: 0;
+}
+.love {
+  font-size: 1rem;
+  color: #f8483d;
+}
+.store_div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.store_div a {
+  display: flex;
+}
+.store {
+  background-color: #343434;
+  margin: 0 0.5rem;
+  border-radius: 30px;
+  padding: 0.4rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media_icon {
+  margin: 0 0.3rem;
+  display: flex;
+}
+
+@media (max-width: 1200px) {
+  .footer_logo {
+    margin-bottom: 1em;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_logo p {
+    font-size: 0.8rem;
+  }
+
+  .footer_bottom_right {
+    flex-direction: column;
+    align-items: center;
+  }
+  .made_with {
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+  .social_media {
+    margin-bottom: 1rem;
+  }
+  .footer_bootm_right_col,
+  .footer_bootm_left_col {
+    margin: 0 auto;
+  }
+}

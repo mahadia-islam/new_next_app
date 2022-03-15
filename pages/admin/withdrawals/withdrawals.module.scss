@@ -1,0 +1,97 @@
+.button_div_container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+
+  .button_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+
+    button {
+      border: none;
+      background: #f9f9f9;
+      border-radius: 46px;
+      padding: 0.5rem 1.5rem;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      text-transform: capitalize;
+    }
+
+    .active {
+      background-color: #e46713;
+      color: white;
+    }
+  }
+}
+
+.withdraw_table_div {
+  margin-top: 4rem;
+  h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+}
+
+.table_title {
+  background: #f9f9f9;
+  border-radius: 1px;
+  text-transform: capitalize;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.arrove_decline_btn_div {
+  display: flex;
+  align-items: center;
+}
+
+.approve_btn {
+  background: #1cc88a;
+  border-radius: 5px;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  font-size: 12px;
+  color: white;
+}
+
+.decline_btn {
+  background: transparent;
+  border-radius: 5px;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  font-size: 12px;
+  color: #ca1919;
+}
+
+.disable_approve {
+  border: none;
+  background: #dfdfdf;
+  color: white;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+  font-size: 12px;
+}
+
+.disable_decline {
+  border: none;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+  font-size: 12px;
+}
+
+@media (max-width: 992px) {
+  .button_div_container {
+    .button_div {
+      grid-gap: 0.5rem;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      button {
+        font-size: 12px;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}

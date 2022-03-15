@@ -1,0 +1,80 @@
+.transactions {
+  margin-top: 2rem;
+  min-height: 84vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.history_grid {
+  display: grid;
+  grid-template-columns: 1fr 14fr;
+}
+
+.order_details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.order_details h6 {
+  font-size: 1rem;
+  display: flex;
+  align-items: flex-start;
+  color: #1e262f;
+}
+
+.order_details button {
+  border: none;
+  background-color: transparent;
+  color: #4289fc;
+  font-size: 14px;
+  padding: none;
+}
+
+.order_details span {
+  font-size: 10px;
+  color: #808080;
+  margin-bottom: 1rem;
+}
+
+.arrow_div {
+  height: 2rem;
+  width: 2rem;
+  background: #fff4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.withdraw_arr {
+  color: #f73c41;
+  font-size: 1.2rem;
+  transform: rotate(-45deg);
+}
+
+.diposit_arr_div {
+  background: #ddfff3;
+}
+
+.diposit_arr {
+  font-size: 1.2rem;
+  transform: rotate(-45deg);
+  color: #1cc88a;
+}
+
+.withdraw_amount {
+  color: #f73c41;
+}
+
+.diposit_amount {
+  color: #1cc88a;
+}
