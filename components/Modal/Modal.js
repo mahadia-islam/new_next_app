@@ -7,7 +7,7 @@ function Modal({isOpen,closeModal}) {
             <form>
                 <input type="text" placeholder="500"/>
                 <div className={classes.btn__div}>
-                    <button className={classes.btn_one}>Back</button>
+                    <button onClick={ () => closeModal(!isOpen) } className={classes.btn_one}>Back</button>
                     <button className={classes.btn_two}>Change</button>
                 </div>
             </form>

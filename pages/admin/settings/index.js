@@ -64,13 +64,13 @@ const Settings = () => {
                 </div>
                 <div className={`${classes.setting_inner_block}`}>
                   <p>Deposit Fee is <span>5%</span></p>
-                  <button>Change</button>
+                  <button onClick={() => setModal(!openModal)}>Change</button>
                 </div>
               </div>
               <div className={classes.setting_inner_blocks}>
                 <div className={classes.setting_inner_block}>
                   <p>Flutterwave Fee is <span>2.5%</span></p>
-                  <button>Change</button>
+                  <button onClick={() => setModal(!openModal)}>Change</button>
                 </div>
               </div>
             </div>
@@ -151,17 +151,17 @@ const Settings = () => {
                 </div>
                 <div className={`${classes.setting_inner_block}`}>
                   <p>Max number of Milestones is <span>6</span></p>
-                  <button>Change</button>
+                  <button onClick={() => setModal(!openModal)}>Change</button>
                 </div>
               </div>
               <div className={classes.setting_inner_blocks}>
                 <div className={classes.setting_inner_block}>
                   <p>Min. Milestone Amount is <span>N20000</span></p>
-                  <button>change</button>
+                  <button onClick={() => setModal(!openModal)}>change</button>
                 </div>
                 <div className={`${classes.setting_inner_block}`}>
                   <p>Days to Stop Milestone Order is <span>10</span></p>
-                  <button>Change</button>
+                  <button onClick={() => setModal(!openModal)}>Change</button>
                 </div>
               </div>
             </div>
@@ -260,7 +260,7 @@ const Settings = () => {
               <div className={classes.setting_inner_blocks}>
                 <div className={classes.setting_inner_block}>
                   <p>Min. Withdrwal is <span>N1500</span></p>
-                  <button>change</button>
+                  <button onClick={() => setModal(!openModal)}>change</button>
                 </div>
                 <div className={classes.setting_inner_block}>
                   <p>User to withdraw Deposites</p>
@@ -287,11 +287,11 @@ const Settings = () => {
               <div className={classes.setting_inner_blocks}>
                 <div className={classes.setting_inner_block}>
                   <p>Withdrawal Fee is <span>N100</span></p>
-                  <button>change</button>
+                  <button onClick={() => setModal(!openModal)}>change</button>
                 </div>
                 <div className={classes.setting_inner_block}>
                   <p>Max. fix to be created is <span>7</span></p>
-                  <button>change</button>
+                  <button onClick={() => setModal(!openModal)}>change</button>
                 </div>
               </div>
             </div>
