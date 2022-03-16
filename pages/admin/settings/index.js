@@ -103,8 +103,8 @@ const Settings = () => {
                 <div className={`${classes.setting_inner_block}`}>
                   <p>Pay with Bank Transfar</p>
                   <div className={classes.utils}>
-                    <label className={classes.toggle} htmlFor="uniqueID">
-                      <input type="checkbox" className={classes.toggle__input} id="uniqueID"/>
+                    <label className={classes.toggle} htmlFor="uniqueID2">
+                      <input type="checkbox" className={classes.toggle__input} id="uniqueID2"/>
                       <span className={classes.toggle_track}>
                         <span className={classes.toggle_indicator}>
                           {/* <!-- 	This check mark is optional	 --> */}
@@ -131,8 +131,8 @@ const Settings = () => {
                 <div className={classes.setting_inner_block}>
                   <p>Milestone</p>
                   <div className={classes.utils}>
-                    <label className={classes.toggle} htmlFor="uniqueID">
-                      <input type="checkbox" className={classes.toggle__input} id="uniqueID"/>
+                    <label className={classes.toggle} htmlFor="uniqueID3">
+                      <input type="checkbox" className={classes.toggle__input} id="uniqueID3"/>
                       <span className={classes.toggle_track}>
                         <span className={classes.toggle_indicator}>
                           {/* <!-- 	This check mark is optional	 --> */}
@@ -173,8 +173,8 @@ const Settings = () => {
                 <div className={classes.setting_inner_block}>
                   <p>All Fixes To Require Approval</p>
                   <div className={classes.utils}>
-                    <label className={classes.toggle} htmlFor="uniqueID">
-                      <input type="checkbox" className={classes.toggle__input} id="uniqueID"/>
+                    <label className={classes.toggle} htmlFor="uniqueID4">
+                      <input type="checkbox" className={classes.toggle__input} id="uniqueID4"/>
                       <span className={classes.toggle_track}>
                         <span className={classes.toggle_indicator}>
                           {/* <!-- 	This check mark is optional	 --> */}
@@ -194,8 +194,8 @@ const Settings = () => {
                 <div className={classes.setting_inner_block}>
                   <p>Extras</p>
                   <div className={classes.utils}>
-                    <label className={classes.toggle} htmlFor="uniqueID">
-                      <input type="checkbox" className={classes.toggle__input} id="uniqueID"/>
+                    <label className={classes.toggle} htmlFor="uniqueID5">
+                      <input type="checkbox" className={classes.toggle__input} id="uniqueID5"/>
                       <span className={classes.toggle_track}>
                         <span className={classes.toggle_indicator}>
                           {/* <!-- 	This check mark is optional	 --> */}
@@ -217,8 +217,8 @@ const Settings = () => {
                 <div className={classes.setting_inner_block}>
                   <p>Registretion</p>
                   <div className={classes.utils}>
-                    <label className={classes.toggle} htmlFor="uniqueID">
-                      <input type="checkbox" className={classes.toggle__input} id="uniqueID"/>
+                    <label className={classes.toggle} htmlFor="uniqueID6">
+                      <input type="checkbox" className={classes.toggle__input} id="uniqueID6"/>
                       <span className={classes.toggle_track}>
                         <span className={classes.toggle_indicator}>
                           {/* <!-- 	This check mark is optional	 --> */}
@@ -238,8 +238,8 @@ const Settings = () => {
                 <div className={classes.setting_inner_block}>
                   <p>Withdrawals</p>
                   <div className={classes.utils}>
-                    <label className={classes.toggle} htmlFor="uniqueID">
-                      <input type="checkbox" className={classes.toggle__input} id="uniqueID"/>
+                    <label className={classes.toggle} htmlFor="uniqueID7">
+                      <input type="checkbox" className={classes.toggle__input} id="uniqueID7"/>
                       <span className={classes.toggle_track}>
                         <span className={classes.toggle_indicator}>
                           {/* <!-- 	This check mark is optional	 --> */}
@@ -265,8 +265,8 @@ const Settings = () => {
                 <div className={classes.setting_inner_block}>
                   <p>User to withdraw Deposites</p>
                   <div className={classes.utils}>
-                    <label className={classes.toggle} htmlFor="uniqueID">
-                      <input type="checkbox" className={classes.toggle__input} id="uniqueID" disabled/>
+                    <label className={classes.toggle} htmlFor="uniqueID8">
+                      <input type="checkbox" className={classes.toggle__input} id="uniqueID8" disabled/>
                       <span className={classes.toggle_track}>
                         <span className={classes.toggle_indicator}>
                           {/* <!-- 	This check mark is optional	 --> */}

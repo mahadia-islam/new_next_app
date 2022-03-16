@@ -89,8 +89,7 @@
         }
 
         .toggle_track {
-          background: #1CC88A;
-          border: #1CC88A;
+          background: gray;
           border-radius: 100px;
           cursor: pointer;
           display: -webkit-box;
@@ -134,9 +133,13 @@
           transition: opacity 1s ease-in-out;
         }
 
+        .toggle__input:checked + .toggle_track{
+          background: #1CC88A;
+        }
+
         .toggle__input:checked + .toggle_track .toggle_indicator {
           background: white;
-          -webkit-transform: translateX(30px);
+          -webkit-transform: translateX(26px);
           transform: translateX(26px);
         }
 
